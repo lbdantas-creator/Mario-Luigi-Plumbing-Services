@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mukta" , sans-serif;
+}
+
+button {
+    background-color: #C51111;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+ul {
+    color:white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap:30px;
+    font-size: 18px;
+    color:white;
+}
+
+.wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+}
+
+a:active {
+    color: rgb(100, 6, 6);
+    text-shadow: 0 0 8px white;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mascara-video {
+    background: linear-gradient(
+        109deg, 
+        rgba(10, 12, 16, 0.99) 15%, 
+        rgba(10, 12, 16, 0.7) 50%,
+        rgba(10, 12, 16, 0.99) 85%
+         );
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+} 
+main { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+
+}
+
+.main-um {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap:20px;
+    color: white;
+    font-size: 15px;
+
+}
+
+form {
+    background-color: white;
+    
+    position: fixed;
+    top: 45%;
+    left: -350px;
+    z-index: 2;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    min-width: 350px;
+    
+    transition: left 1s ease-in-out; 
+}
+
+
+textarea {
+    min-width: 330px;
+    min-height: 100px;
+    padding-top: 10px;
+}
+
+
+.campo {
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline-color: #18d80f;
+}
+
+form button {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.mascara-form {
+    background: linear-gradient(
+        109deg,
+        rgba(10, 12, 16, 0.99) 15%,
+        rgba(10, 12, 16, 0.7) 50%,
+        rgba(10, 12, 16, 0.99) 85%
+    );
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    visibility: hidden;
+    transition: visibility 1s ease-in-out; 
+}  
+
+footer {
+    text-align: left;
+    padding: 20px;
+    color: white;
+    font-size: 10px;
+}

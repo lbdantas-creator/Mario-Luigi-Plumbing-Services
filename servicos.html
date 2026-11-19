@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleservicos.css">
+    <title>Nossos Serviços</title>
+    <link rel="icon" href="img/servicos/favicon.png" type="image/png">
+</head>
+<body>
+    <img id="background" src="img/servicos/mario-serv.jpg" type="image/jpg"></img>
+    <div class="mascara"></div>
+    <div class="wpp">
+        <a href="https://wa.me/5574988570957?text=Quero%20um%20servi%C3%A7o!" 
+            target="_blank" rel="noopener noreferrer"><img src="img/whatsapp.png" 
+            alt="imagem-whatsapp.png" width="60px">
+        </a>
+    </div>
+    <div class="mascara-form" onclick="esconderForm()"></div>
+   <form class="formulario" 
+        action="https://formcarry.com/s/GSv51_veCuM"
+        method="POST"
+        enctype="multipart/form-data">
+        <input class="campo" placeholder="Seu Nome" autocomplete="name" type="text" name="nome">
+        <input class="campo" placeholder="Telefone" autocomplete="tel" type="number" name="telefone">
+        <textarea class="campo" placeholder="Digite seu problema" name="problema"></textarea>
+        <button type="submit">Pedir orçamento</button>
+    </form>
+
+    <header>
+        <img src="img/logo-header.png" alt="mario" width="70px">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a onclick="mostrarForm()">Fale Conosco</a></li>
+            <li><a href="servicos.html">Nossos Serviços</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="primeiro-topico">
+                <h1>Nossos Serviços</h1>
+                <p>Soluções completas em serviços hidráulicos,
+                <br>com qualidade, agilidade e sergurança.
+                </p>
+                <br>
+                <br>
+                <p class="destaque"><b><i>Seu problema é nossa prioridade!</i></b></p>            
+            </div>
+            <img src="img/logo.png" alt="logo" height="350px">
+        </section>
+        <div class="segundo-topico">
+            <ul>
+                <li class="servicos">
+                    <img src="img/servicos/torneira-pingando.png" width="60px" alt="Imagem de torneira pingando">
+                    <p>Instalação e manutenção de torneiras</p>
+                </li>
+                <li class="servicos">
+                    <img src="img/servicos/vaso.png" width="60px" alt="Vaso sanitário">
+                    <p>Desentupimento</p>
+                </li>
+                <li class="servicos">
+                    <img src="img/servicos/cano.png" width="63px" alt="Cano">
+                    <p>Reparos em tubulações</p>
+                </li>
+                <li class="servicos">
+                    <img src="img/servicos/aquecedor.png" width="60px" alt="Aquecedor de água">
+                    <p>Instalação e manutenção de aquecedor de água</p>
+                </li>
+                <li class="servicos">
+                    <img src="img/servicos/vazamento.png" width="60px" alt="Cano com vazamento">
+                    <p>Vazamentos</p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="terceiro-topico">
+            <img src="img/luigi.png" width="170px">
+            <div id="ultima">
+                <div class="chamada-final">
+                    <h2>Precisa de um encanador?</h2>
+                    <br>
+                    <p>Entre em contato agora e solicite <br>um orçamento sem compromisso.</p>
+                </div>
+                <button onclick="mostrarForm()">Fale Conosco</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Esta é uma página de teste desenvolvida durante o curso DevClub.</p>
+        <p>Projeto criado por <strong>Ellen Liborio</strong> &copy; 2025</p>
+    </footer>
+    <script src="java-servico.js"></script>
+</body>
+</html>

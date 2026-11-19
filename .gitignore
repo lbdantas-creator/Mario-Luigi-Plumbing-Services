@@ -1,0 +1,7 @@
+# Windows temporary files
+*:Zone.Identifier
+*~RF*.TMP
+
+# System files
+.DS_Store
+Thumbs.db
