@@ -20,7 +20,7 @@ button {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 ul {
     color:white;
@@ -167,4 +167,136 @@ footer {
     padding: 20px;
     color: white;
     font-size: 10px;
+    margin-left: 30px;
 }
+
+img {
+    max-width: 100%;
+}
+
+/*Media query
+ele deve ficar sempre no final para ser aplicado por ultimo*/
+
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    header {
+        justify-content: flex-start;
+        padding: 15px 25px;
+        gap: 25px;
+    }
+
+    header ul {
+        flex-direction: row;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 60px 30px;
+        gap: 25px;
+    }
+
+    .main-um {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .main-um > img {
+        width: 240px;
+    }
+
+    main > img {
+        width: 45%;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+    }
+
+    footer {
+        margin-left: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    header ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 15px;
+    }
+
+    main {
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 15px;
+    gap: 30px;
+    text-align: center;
+    }
+
+    .main-um {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    }
+
+    .main-um p {
+    width: 100%;
+    max-width: 350px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    }
+
+    .main-um > img {
+        width: 230px;
+    }
+
+    main > img {
+        width: min(85%, 350px);
+        height: auto;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+    footer {
+        margin-left: 0;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .wpp img {
+        width: 50px;
+    }
+
+    form {
+        min-width: 0;
+        width: calc(100% - 30px);
+        max-width: 350px;
+        left: -100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    textarea {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
